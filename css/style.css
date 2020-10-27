@@ -2,6 +2,8 @@
     font-family: 'Inter', sans-serif;
     font-size: 14px;
 }
+
+/* DARK */
 .dark{
     background-color: #232326;
     color: #F3F2F0;
@@ -15,6 +17,19 @@
 .dark .nav-link{
     color: #F3F2F0;
 }
+.dark .social,
+.dark .step-item {
+    border-bottom: 1px solid #F3F2F0;
+}
+.dark .step-item:first-child {
+    border-top: 1px solid #F3F2F0;
+}
+
+
+
+
+
+/* LIGHT */
 .light{
     background-color: #E5E5E5;
     color: #010101;
@@ -28,6 +43,18 @@
 .light .nav-link{
     color: #010101;
 }
+.light .social,
+.light .step-item{
+    border-bottom: 1px solid #010101;
+}
+.light .step-item:first-child {
+    border-top: 1px solid #010101;
+}
+
+
+
+
+
 .wrapper{
     max-width: 1140px;
     margin: 0 auto;
@@ -116,6 +143,7 @@ header{
     justify-content: space-between;
     margin-top: 100px;
     padding-bottom: 60px;
+    border-bottom: 1px solid #F3F2F0;
 }
 .social-item:last-child{
     position: relative;
@@ -135,9 +163,10 @@ header{
 .skill{
     display: flex;
     justify-content: space-between;
+    padding-top: 60px;
 }
 .skill-item{
-    flex: 0 0 24%;
+    flex: 0 0 23%;
 }
 .skill .title-h3{
     text-transform: uppercase;
@@ -161,6 +190,7 @@ header{
 }
 .steps-discription{
     font-size: 16px;
+    flex: 0 0 49%;
 }
 .circlee-main{
     width: 253px;
