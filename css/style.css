@@ -66,13 +66,14 @@
     text-decoration: none;
     color: #F3F2F0;
     font-size: 14px;
+    transition: 0.2s color ease;
 }
 .nav-link:hover{
     color:#D40000;
 }
 
 .photo{
-    margin-bottom: 120px;
+    margin-bottom: 94px;
     width: 100%;
 }
 .main{
@@ -81,6 +82,8 @@
 .main .title-h1{
     position: relative;
     z-index: 3;
+    margin-top: 39px;
+    letter-spacing: 0.03em;
 }
 .name{
     font-size: 28px;
@@ -133,16 +136,13 @@ header{
     display: flex;
     justify-content: space-between;
     padding-top: 40px;
-    padding-bottom: 60px;
+    padding-bottom: 62px;
 }
-.project{
-    font-size: 16px;
-    font-weight: 700;
-}
+
 .social{
     display: flex;
     justify-content: space-between;
-    margin-top: 100px;
+    margin-top: 89px;
     padding-bottom: 60px;
     border-bottom: 1px solid #F3F2F0;
 }
@@ -154,11 +154,25 @@ header{
     justify-content: space-between;
     align-items: center;
 }
+.project{
+    font-size: 16px;
+    font-weight: 700;
+    padding-bottom: 11px;
+    cursor: pointer;
+    border-bottom: 2px solid transparent;
+    transition: 0.2s border-bottom ease;
+}
+.project:hover{
+    border-bottom: 2px solid #F3F2F0;
+    
+}
 .project-img{
     width: 16px;
     height: 12px;
+    padding-bottom: 11px;
     display: block;
     background-image: url(../img/icons/arrow.svg);
+    background-repeat: no-repeat;
     margin-left: 15px;
 }
 .skill{
@@ -197,14 +211,14 @@ header{
     width: 253px;
     height: 253px;
     position: absolute;
-    left: -130px;
-    top: calc(50% - 126px);
+    left: -126px;
+    top: calc(50% - 138px);
     z-index: 1;
 }
 .tryangle{
     position: absolute;
     left: -150px;
-    top: 0;
+    top: -20px;
     z-index: 2;
 }
 .circle-nav{
@@ -212,7 +226,7 @@ header{
     height: 106px;
     position: absolute;
     right: 38px;
-    top: calc(50% - 53px);
+    top: calc(50% - 59px);
 }
 .about{
     display: grid;
