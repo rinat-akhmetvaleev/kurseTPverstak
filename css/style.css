@@ -405,3 +405,34 @@ header{
     height: 315px;
     object-fit: cover;
 }
+
+
+
+
+.section-advantages{
+    padding-top: 100px;
+}
+.advanteges-text{
+    font-size: 28px;
+    line-height: 150%;
+    max-width: 870px;
+    border-bottom: 1px solid #F3F2F0;
+}
+.advanteges{
+    display: grid;
+    grid-template: 1fr 1fr/ repeat(3, 1fr);
+}
+.advanteges-item{
+    display: flex;
+    align-items: center;
+}
+.advantegas-image{
+    margin-right: 40px;
+}
+.advantegas-image svg{
+    width: 40px;
+    height: 40px;
+}
+.advantegas-image path{
+    fill: #F3F2F0;
+}
