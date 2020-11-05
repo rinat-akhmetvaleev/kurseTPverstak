@@ -619,3 +619,72 @@ header{
     z-index: 1;
     margin: 0;
 }
+.form{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    font-size: 12px;
+    line-height: 150%;
+}
+.form-title {
+    font-size: 28px;
+    font-weight: 700;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    border-bottom: 1px solid #F3F2F0;
+    position: relative;
+    padding-top: 102px;
+    line-height: 150%;
+}
+.form-title p{
+    z-index: 3;
+    position: relative;
+}
+.form-title .circle{
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    left: -154px;
+    top: calc(50% - 22px);
+    z-index: 1;
+}
+.form-title .tryangle {
+    position: absolute;
+    width: 64.34px;
+    height: 91.67px;
+    left: -177px;
+    top: 134px;
+    z-index: 2;
+}
+.form-description {
+    font-size: 28px;
+    line-height: 150%;
+    opacity: 0.8;
+    border-bottom: 1px solid #F3F2F0;
+}
+.form label{
+    opacity: 0.8;
+    margin-bottom: 10px;
+    display: block;
+}
+.form input{
+    width: 100%;
+    padding: 26px 20px 26px;
+    background-color: rgba(243, 242, 240, 0.1);
+    border: none;
+    box-sizing: border-box;
+}
+.form select{
+    width: 100%;
+}
+.ui-selectmenu-button.ui-button{
+    width: 100%;
+    padding: 24px 20px 23px;
+    background-color: rgba(243, 242, 240, 0.1);
+    color: #fff;
+    box-sizing: border-box;
+}
+.ui-button:hover, 
+.ui-button:focus{
+    border: none;
+    outline: none;
+}
