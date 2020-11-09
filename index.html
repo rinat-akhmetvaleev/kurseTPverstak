@@ -27,7 +27,16 @@
                     <li class="nav-item"><a class="nav-link"  href="rinat.akhmetvaleev1995@gmail.com">rinat.akhmetvaleev1995@gmail.com</a></li>
                 </ul>
             </header>
-            <img class="photo" src="img/photo.png" alt="Photo">
+
+            <div class="header-mobile">
+                <a class="nav-link"  href="8 982 386-30-79">8 982 386-30-79</a>
+                <button id="opener" class="menu"><img src="img/icons/burgers.svg" alt="Menu"></button>
+            </div>
+
+            
+            <div class="photo">
+                <img src="img/photo.png" alt="Photo">
+            </div>
             <main>  
                 <div class="main">
                     <svg class="circle circlee-main" viewBox="0 0 253 253" xmlns="http://www.w3.org/2000/svg">
@@ -376,7 +385,7 @@
                     <div class="tarif-description">
                         <p>Представленные ниже цены зависят не&nbsp;только от того какой сайт вы хотите. Конечная цена будет озвучена после прочтения Вашего ТЗ</p>
                     </div>
-                    <div class="tarif-item">
+                    <div class="tarif-item tarif-left">
                         <div class="tarif-header">
                             <p class="tarif-name">Разработка<br>лэндинга или сайт визитки</p>
                             <p class="tarif-text">Небольшой сайт состоящий из одной страницы</p>
@@ -385,7 +394,7 @@
                             <p class="project"><span>Обсудить проект</span><span class="project-img"></span></p>
                         </div>
                     </div>
-                    <div class="tarif-item">
+                    <div class="tarif-item tarif-left">
                         <div class="tarif-header">
                             <p class="tarif-pack">Что входит</p>
                             <ul class="tarif-list">
@@ -402,7 +411,7 @@
                         </div>
                         
                     </div>
-                    <div class="tarif-item">
+                    <div class="tarif-item tarif-left">
                         <div class="tarif-header">
                             <p class="tarif-name">Разработка<br>корпоративного сайта</p>
                             <p class="tarif-text">Небольшой сайт с n-количеством страниц</p>
@@ -411,7 +420,7 @@
                             <p class="project"><span>Обсудить проект</span><span class="project-img"></span></p>
                         </div>
                     </div>
-                    <div class="tarif-item">
+                    <div class="tarif-item tarif-left">
                         <div class="tarif-header">
                             <p class="tarif-pack">Что входит</p>
                             <ul class="tarif-list">
@@ -425,7 +434,7 @@
                             <p class="tarif-price">От 10 000 Р</p>
                         </div>
                     </div>
-                    <div class="tarif-item">
+                    <div class="tarif-item tarif-left">
                         <div class="tarif-header">
                             <p class="tarif-name">Разработка<br>интернет - магазина</p>
                             <p class="tarif-text">Полноценный каталог вашей продукции</p>
@@ -434,7 +443,7 @@
                             <p class="project"><span>Обсудить проект</span><span class="project-img"></span></p>
                         </div>
                     </div>
-                    <div class="tarif-item">
+                    <div class="tarif-item tarif-left">
                         <div class="tarif-header">
                             <p class="tarif-pack">Что входит</p>
                             <ul class="tarif-list">
@@ -511,6 +520,9 @@
             </footer>
         </div>
     </div>
+    <div id="dialog" title="Basic dialog">
+        <p>This is an animated dialog which is useful for displaying information. The dialog window can be moved, resized and closed with the 'x' icon.</p>
+    </div>
     
     
     
@@ -522,6 +534,21 @@
           $( "#tabs" ).tabs({active: 0});
           $( document ).tooltip();
           $( "#comunicate" ).selectmenu();
+          $( "#dialog" ).dialog({
+            autoOpen: false,
+            show: {
+                effect: "blind",
+                duration: 1000
+            },
+            hide: {
+                effect: "blind",
+                duration: 1000
+            }
+            });
+        
+            $( "#opener" ).on( "click", function() {
+            $( "#dialog" ).dialog( "open" );
+            });
         } );
         $('.tech-image').tooltip({
             position:{
