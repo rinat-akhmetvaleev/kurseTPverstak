@@ -79,9 +79,9 @@
 .photo img{
     width: 100%;
     height: 310px;
-    position: absolute;
-    left: -50%;
-    top: -50%;
+    position: absolute; 
+    /* left: -50%;
+    top: -50%;  */
     transition: translate(50%,50%);
     object-fit: cover;
 }
@@ -990,7 +990,6 @@ footer{
         height: inherit;
     }
     .tarif-left{
-        border-bottom: none !important;
         padding-bottom: 0;
     }
     .circlee-price{
@@ -1030,27 +1029,33 @@ footer{
     .skill .title-h3{
         margin-bottom: 18px;
     }
-    .skill-item{
-        padding-bottom: 10px;
+    .skill-item {
+        padding-bottom: 18px;
+    }
+    .about {
+        grid-template: 73px/ repeat(2, 1fr);
     }
     .about-title {
-        padding-top: 57px;
+        padding-top: 49px;
         border-bottom: none !important;
     }
     .about-description{
-        padding: 20px 10px 64px 9px;
+        padding: 20px 10px 39px 0;
+    }
+    .about-item .title-h3 {
+        margin-bottom: 18px;
     }
     .about-01{
-        padding: 30px 20px 35px 9px;
+        padding: 30px 20px 5px 0;
     }
     .about-02{
-        padding: 32px 10px 35px 12px;
+        padding: 30px 20px 5px 0;
     }
     .about-03{
-        padding: 0 20px 14px 9px;
+        padding: 17px 20px 14px 0;
     }
     .about-04{
-        padding: 0 10px 14px 12px;
+        padding: 16px 10px 14px 0;
     }
     .section-step{
         padding-top: 44px;
@@ -1062,17 +1067,19 @@ footer{
         left: -69px;
         top: calc(50% - 67px);
     }
-    .triangle{
-        bottom: -69px;
-        width: 33px;
+    .main .tryangle{
+        bottom: -70px;
+        width: 29px;
     }
     .skill,
     .about-item,
     .nav-tabs,
     .tarif-text,
     form input,
+    .form label,
     .footer-top .nav-link,
-    .footer-bottom
+    .footer-bottom,
+    .about-item .description
     {
         font-size: 10px;
     }
@@ -1085,7 +1092,8 @@ footer{
     .advanteges-description,
     .tarif-pack,
     .tarif-list,
-    form input[type=submit]
+    form input[type=submit],
+    .advanteges-discription
     {
         font-size: 12px;
     }
@@ -1096,6 +1104,7 @@ footer{
     .about-title,
     .about-description,
     .steps-title,
+    .steps-title span,
     .work-title,
     .advanteges-text,
     .tarif-title,
@@ -1109,11 +1118,11 @@ footer{
     .tarif-price{
         font-size: 22px;
     }
-    .circle-portfolio{
+    .circle-portfolio {
         width: 197px;
         height: 197px;
-        top: -220px;
-        right: 0;
+        top: -107px;
+        right: -2px;
     }
     .nav-tabs{
         justify-content: space-between;
@@ -1126,4 +1135,185 @@ footer{
     .jquery .tech-image{
         width: 35px;
     }
+    .portfolio {
+        margin-bottom: 38px;
+    }
+    .nav-tabs {
+        top: -18px;
+    }
+    .work-title {
+        margin-bottom: 22px;
+        margin-top: 16px;
+    }
+    .work-list-item {
+        margin-bottom: 15px;
+    }
+    p.work-time {
+        padding-top: 8px;
+    }
+    .work-item {
+        padding-bottom: 28px;
+    }
+    .work-thumb {
+        height: 190px;
+        margin-bottom: 11px;
+    }
+    .work-image {
+        height: 190px;
+    }
+    .work {
+        padding-top: 56px;
+    }
+    .work:nth-last-child(1){
+        padding-top: 24px;
+    }
+    .section-advantages {
+        padding-top: 64px;
+    }
+    .advanteges {
+        padding-top: 41px;
+        margin-top: 39px;
+        margin-bottom: 31px;
+        grid-gap: 2px 1px;
+    }
+    .advantegas-image svg {
+        width: 30px;
+        height: 30px;
+    }
+    .advanteges-discription{
+        line-height: 150%;
+        margin-top: 17px;
+        margin-bottom: 28px;
+    }
+    .tech-item:first-child, .tech-item:nth-child(1),
+    .tech-item:first-child, .tech-item:nth-child(2),
+    .tech-item:first-child, .tech-item:nth-child(3),
+    .tech-item:first-child, .tech-item:nth-child(4),
+    .tech-item:first-child, .tech-item:nth-child(5),
+    .tech-item:first-child, .tech-item:nth-child(6),
+    .tech-item:first-child, .tech-item:nth-child(7),
+    .tech-item:first-child, .tech-item:nth-child(8) {
+        height: 42px;
+    }
+    .tech {
+        grid-template: 44px 1px/ repeat(4, 1fr);
+    }
+    .section-tarif {
+        padding-top: 59px;
+    }
+    .circlee-tarif {
+        left: -88px;
+    }
+    .tarif {
+        grid-template-columns: 1fr 1fr;
+    }
+    .tarif-item.tarif-right {
+        grid-column: 2/3;
+    }
+    .tarif-item {
+        padding-bottom: 37px;
+        margin-bottom: 10px;
+        border-bottom: 1px solid #F3F2F0;
+    }
+    .tarif-description p {
+        margin-bottom: 29px;
+        margin-top: 7px;
+    }
+    .project-img {
+        margin-left: 7px;
+    }
+    .tarif-list-item {
+        font-size: 12px;
+        line-height: 150%;
+        padding: 8px 0 0 38px;
+    }
+    .tarif-list-item::before {
+        left: 27px;
+        top: calc(50% - 0px);
+    }
+    .tarif-name {
+        margin-top: 40px;
+        margin-bottom: 20px;
+    }
+    .tarif-pack {
+        margin-top: 40px;
+        padding-left: 28px;
+    }
+    .circlee-price {
+        width: 40px;
+        height: 40px;
+        top: -3px;
+        left: 8px;
+    }
+    .tarif-name:last-child(2){
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+    .section-form {
+        padding-top: 0px;
+        padding-bottom: 0px;
+    }
+    .form {
+        padding-top: 0;
+    }
+    .form-title {
+        padding-top: 48px;
+    }
+    .form-description {
+        padding-top: 0px;
+        padding-bottom: 33px;
+    }
+    .form-description>p{
+        margin: 0;
+    }
+    .form-title .circlee-main{
+        width: 190px;
+        height: 190px;
+        left: -53px;
+        top: calc(50% - 53px);
+    }
+    .form-title .tryangle{
+        width: 31px;
+        height: 39px;
+        left: 96px;
+        top: 14px;
+        z-index: 1;
+    }
+    .form-item {
+        padding-top: 39px;
+    }
+    .form input {
+        padding: 22px 20px 21px;
+        margin-bottom: 25px;
+    }
+    .form label {
+        margin-bottom: 0px;
+    }
+    .ui-selectmenu-button.ui-button {
+        margin-bottom: 28px;
+    }
+    .form input[type=submit] {
+        font-size: 12px;
+        padding: 16px 0;
+    }
+    .form-social {
+        padding-top: 35px;
+    }
+    .nav-social .nav-item {
+        padding-left: 12px;
+        padding-right: 8px;
+    }
+    .nav-item {
+        padding-right: 1px;
+        padding-left: 10px;
+    }
+    .footer-top .nav-info {
+        padding-bottom: 29px;
+        padding-top: 59px;
+    }
+    .footer-bottom {
+        padding-top: 33px;
+        padding-bottom: 0px;
+    }
+    
 }
